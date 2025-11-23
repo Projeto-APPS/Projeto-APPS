@@ -1,6 +1,15 @@
+"use client"
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+    const router = useRouter();
+
+    function handleSignUp() {
+        router.push("/cadastro");
+    }
+
     return (
         <div className="min-h-screen w-full bg-[#73D9B8] flex flex-col items-center px-6 py-10 justify-end">
 
@@ -34,13 +43,17 @@ export default function Login() {
                 placeholder="Senha"
                 className="w-full mt-4 px-4 py-3 bg-white rounded-xl text-black placeholder-gray-400 border border-gray-800 focus:outline-none"
             />
-            <button className="w-full mt-6 bg-[#279B75] text-white py-3 rounded-xl text-lg font-medium">
+            <button 
+                className="w-full mt-6 bg-[#279B75] text-white py-3 rounded-xl text-lg font-medium"
+                
+            >
+                
                 Entrar
             </button>
 
             <p className="text-center text-black mt-6">
                 Não tem uma conta?{" "}
-                <a href="#" className="font-semibold underline">
+                <a onClick={handleSignUp} className="font-semibold underline">
                     Cadastre-se
                 </a>
             </p>
