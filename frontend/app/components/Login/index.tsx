@@ -34,7 +34,7 @@ export default function Login() {
                 placeholder="Senha"
                 className="w-full mt-4 px-4 py-3 bg-white rounded-xl text-black placeholder-gray-400 border border-gray-800 focus:outline-none"
             />
-            <button className="w-full mt-6 bg-[#2F8C72] text-white py-3 rounded-xl text-lg font-medium">
+            <button className="w-full mt-6 bg-[#279B75] text-white py-3 rounded-xl text-lg font-medium">
                 Entrar
             </button>
 
