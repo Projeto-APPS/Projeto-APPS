@@ -1,4 +1,4 @@
-import Cadastro from "@/app/components/Cadastro";
+import Cadastro from "@/app/components/Cadastro/Cadastro";
 
 export default function CadastroPage() {
 
